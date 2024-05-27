@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main>
       <div>
-        <h1>Vibe</h1>
+        <h1>Coming Soon</h1>
       </div>
     </main>
   );
