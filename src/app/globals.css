@@ -4,7 +4,12 @@
 
 h1 {
   text-align: center;
-  margin: 25% auto;
+  margin: 10% auto 5% auto;
   color: black;
   vertical-align: center;
+}
+
+.img {
+  width: 50%;
+  margin: 0 auto; 
 }
