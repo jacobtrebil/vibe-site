@@ -4,12 +4,66 @@
 
 h1 {
   text-align: center;
-  margin: 10% auto 5% auto;
+  color: black;
+}
+
+.headlineDiv {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.blackBox {
+  background-color: black;
+  color: white;
+  padding: 2%;
+  margin: 50px auto 0px auto;
+  width: 40px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.vibeHeadline {
+  text-align: center;
+  margin: 20px 20px 0px 20px;
   color: black;
   vertical-align: center;
+  font-weight: 900;
+  font-size: 5rem;
+  display: inline-block;
+  vertical-align: top;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 auto 20px auto;
+  color: orangered;
+  font-weight: 500;
 }
 
 .img {
-  width: 50%;
+  width: 15%;
   margin: 0 auto; 
+  display: block;
+}
+
+.buttonDiv {
+  text-align: center;
+}
+
+.joinWaitlist {
+  background-color: black;
+  color: white;
+  padding: 2%;
+  margin: 50px auto 20px auto;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.joinWaitlist:hover {
+  background-color: gray;
+  cursor: pointer;
 }
