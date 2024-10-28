@@ -9,7 +9,7 @@ h1 {
 
 .headlineDiv {
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 
 .logo {
@@ -102,4 +102,30 @@ li::before {
 .joinWaitlist:hover {
   background-color: orange;
   cursor: pointer;
+}
+
+footer {
+  margin: 0px auto 0px auto;
+  position: absolute;
+  bottom: 0;
+}
+
+.footerBox {
+  background-color: black;
+  color: white;
+  padding: 2%;
+  margin: 0px auto 0px auto;
+  width: 40px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: bottom;
+  border-radius: 0px /*9999px*/;
+}
+
+.footerText {
+  margin: 0 0 0 40px;
+  display: inline-block;
+  vertical-align: bottom;
+  font-weight: 700;
+  font-size: 1rem;
 }
