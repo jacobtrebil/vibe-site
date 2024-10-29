@@ -23,17 +23,17 @@ h1 {
   background-color: black;
   color: white;
   padding: 2%;
-  margin: 50px auto 0px auto;
+  margin: 50px 0px 0px 20px;
   width: 40px;
   text-align: center;
   display: inline-block;
   vertical-align: top;
-  border-radius: 0px /*9999px*/;
+  border-radius: 2px /*9999px*/;
 }
 
 .vibeHeadline {
   text-align: center;
-  margin: 20px 20px 0px 20px;
+  margin: 15px 20px 0px 20px;
   color: black;
   vertical-align: center;
   font-weight: 900;
@@ -45,9 +45,9 @@ h1 {
 h2 {
   text-align: center;
   margin: 0 auto 20px auto;
-  color: gray;
+  color: black /*gray*/;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .mainDiv {
@@ -86,6 +86,43 @@ li::before {
   text-align: center;
 }
 
+.futuristicButton {
+  border: 2px solid #2074FF;
+  background-color: #23517B;
+  color: #17FFFB;
+  padding: 2%;
+  margin: 50px auto 20px auto;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  font-weight: 900;
+  font-size: 3rem;
+  border-radius: 2px;
+}
+
+.futuristicButton:hover {
+  background-color: #2074FF;
+  cursor: pointer;
+}
+
+.neon-button {
+  padding: 15px 30px;
+  font-size: 3rem;
+  color: black;
+  background: linear-gradient(45deg, #ff7e00, #ffbc00);
+  border: none;
+  border-radius: 5px;
+  border: 5px solid black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.neon-button:hover {
+  box-shadow: 0 0 30px rgba(255, 126, 0, 1), 
+              0 0 40px rgba(255, 188, 0, 0.8);
+              box-shadow: 0 0 20px rgba(255, 126, 0, 0.8), 
+              0 0 30px rgba(255, 188, 0, 0.6);
+}
+
 .joinWaitlist {
   background-color: orangered;
   color: black;
@@ -97,11 +134,20 @@ li::before {
   font-weight: 900;
   font-size: 3rem;
   border: 5px solid black;
+  border-radius: 6px;
 }
 
 .joinWaitlist:hover {
   background-color: orange;
   cursor: pointer;
+}
+
+.buttonSubheadline {
+  text-align: center;
+  margin: 20px auto 20px auto;
+  color: black;
+  font-weight: 500;
+  font-size: 1.25rem;
 }
 
 footer {
@@ -114,18 +160,61 @@ footer {
   background-color: black;
   color: white;
   padding: 2%;
-  margin: 0px auto 0px auto;
-  width: 40px;
+  margin: 0px 0px 32.5px 20px;
+  width: 20px;
+  height: 20px;
   text-align: center;
   display: inline-block;
   vertical-align: bottom;
-  border-radius: 0px /*9999px*/;
+  border-radius: 2px /*9999px*/;
 }
 
 .footerText {
-  margin: 0 0 0 40px;
+  margin: 0 0 30px 10px;
   display: inline-block;
   vertical-align: bottom;
   font-weight: 700;
   font-size: 1rem;
+}
+
+
+
+/* Cyber Text Animation */ 
+
+/* Base styling for the container */
+.cyber-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0; /* Some padding for spacing */
+  font-family: Arial, sans-serif;
+}
+
+/* Holographic gradient effect */
+.cyber-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333; /* Default color in case gradient isn’t supported */
+  position: relative;
+  background: linear-gradient(45deg, #ff6ec4, #6eecff, #ffbc00);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: holographic 4s infinite linear, subtle-glitch 3s infinite;
+}
+
+/* Holographic background animation */
+@keyframes holographic {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Subtle glitch animation */
+@keyframes subtle-glitch {
+  0%, 100% {
+      text-shadow: 1px 1px rgba(255, 110, 196, 0.3), -1px -1px rgba(110, 236, 255, 0.3);
+  }
+  50% {
+      text-shadow: -1px -1px rgba(255, 188, 0, 0.3), 1px 1px rgba(110, 236, 255, 0.3);
+  }
 }
