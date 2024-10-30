@@ -17,7 +17,7 @@ export default function NecklaceViewer() {
         
         // Camera setup
         const camera = new THREE.PerspectiveCamera(
-            80,
+            40,
             containerRef.current.clientWidth / containerRef.current.clientHeight,
             0.1,
             1000
@@ -66,11 +66,12 @@ export default function NecklaceViewer() {
                 // Scale the model to fit the viewport
                 const size = box.getSize(new THREE.Vector3());
                 const maxDim = Math.max(size.x, size.y, size.z);
-                const scale = 30 / maxDim;
+                const scale = 20 / maxDim;
                 modelRef.current.scale.multiplyScalar(scale);
 
                 // Move model to top of viewport
                 modelRef.current.position.y = -10;
+                modelRef.current.position.x = 0; // Move model left by adjusting X position (e.g., -10)
 
                 // Add model to the scene
                 sceneRef.current.add(modelRef.current);
@@ -122,13 +123,15 @@ export default function NecklaceViewer() {
         <div 
             ref={containerRef} 
             style={{ 
-                width: '100%',
-                height: '600px',
-                maxWidth: '800px',
+                width: '50%',
+                height: '400px',
+                maxWidth: '600px',
                 margin: '0 auto',
                 position: 'relative',
                 // Remove top margin to allow model to be at very top
-                marginTop: '0' // Pull the container up
+                marginTop: '-50px', // Pull the container up
+                justifyContent: 'center',
+                alignItems: 'center'
             }} 
         />
     );
