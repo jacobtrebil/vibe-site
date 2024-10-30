@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader';
 
 export default function NecklaceViewer() {
     const containerRef = useRef(null);
@@ -39,8 +40,12 @@ export default function NecklaceViewer() {
         containerRef.current.appendChild(rendererRef.current.domElement);
 
         // Basic lighting
-        const light = new THREE.AmbientLight(0xffffff, 1);
-        sceneRef.current.add(light);
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.3); // Low intensity ambient light
+        sceneRef.current.add(ambientLight);
+
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+        directionalLight.position.set(10, 10, 10);
+        sceneRef.current.add(directionalLight);
 
         // Load model
         const loader = new GLTFLoader();
@@ -52,7 +57,16 @@ export default function NecklaceViewer() {
                     sceneRef.current.remove(modelRef.current);
                 }
 
+                // modelRef.current.children.forEach((child) => {
+                        // Apply environment map and reflective properties only for compatible material types
+                        // child.material.metalness = 1;    // High metalness for reflective effect
+                        // child.material.roughness = 0;    // Low roughness for a glossy surface
+                        // child.material.needsUpdate = true; // Ensure material updates
+                // });
+                
                 modelRef.current = gltf.scene;
+
+                console.log(modelRef.current);
 
                 // Adjust orientation and position only once, when loading the model
                 modelRef.current.rotation.x = Math.PI / 2;   // Rotate 90 degrees on the X-axis
