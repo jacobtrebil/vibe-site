@@ -46,13 +46,25 @@ h2 {
   text-align: center;
   margin: 0 auto 20px auto;
   color: black /*gray*/;
-  font-weight: 500;
-  font-size: 2.5rem;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.colorfulText {
+  background: linear-gradient(45deg, #ff7e00, #ffbc00); /* Adjust colors to match your button */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .mainDiv {
   margin: 0 auto;
   text-align: center;
+}
+
+.gif {
+  margin: 0 auto 40px auto;
+  width: 25%;
 }
 
 .img {

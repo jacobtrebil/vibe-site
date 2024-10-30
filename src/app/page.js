@@ -2,20 +2,23 @@
 
 import Image from "next/image";
 import img from "../../src/app/vibe.png";
+import gif from "../../public/vibe.gif";
 // import logo from "../../src/app/logo2.png";
 import Script from "next/script";
 import dynamic from 'next/dynamic';
 // import vibe from '../../public/vibe.mp4';
 // import render from "./render.html";
+import ThreeDModel from '../app/ThreeDModel';
+import ObjViewer from "./ObjViewer";
 
 export default function Home() {
 
   // const ChromeText3D = dynamic(() => import('./ChromeText3D'), { ssr: false });
 
-  const ChromeText3D = dynamic(() => import('./chromeText3D.js'), {
+  /* const ChromeText3D = dynamic(() => import('./chromeText3D.js'), {
     ssr: false,
     loading: () => <div>Loading...</div>,
-  });
+  }); */
 
   return (
     <main>
@@ -24,10 +27,10 @@ export default function Home() {
         <div className="headlineDiv">
           <div className="blackBox"></div>
           <h1 className="vibeHeadline">VIBE</h1>
-          <h2>AI Necklace With a Camera That <br></br>Tracks Your Nutrition & Habits</h2>
+          <h2>AI Necklace With a Camera That <br></br>Tracks Your <span className="colorfulText">Nutrition & Habits</span></h2>
         </div>
         <div className="mainDiv">
-          <Image className="img" src={img} alt="Picture of the prototype" />
+          <ThreeDModel />
         </div>
         <div className="buttonDiv">
           <button className="neon-button" data-formkit-toggle="cb96ddd2c6" src="https://fresh-3.ck.page/cb96ddd2c6/index.js">Join Waitlist →</button>
@@ -43,6 +46,12 @@ export default function Home() {
 }
 
 /*  
+
+<Image className="gif" src={gif} alt="Picture of the prototype" />
+
+         <ThreeDModel />
+
+          <Image className="img" src={img} alt="Picture of the prototype" />
 
           <div class="cyber-text">
               <h1>Future Vision</h1>
