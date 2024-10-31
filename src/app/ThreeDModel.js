@@ -71,6 +71,7 @@ export default function NecklaceViewer() {
                 // Adjust orientation and position only once, when loading the model
                 modelRef.current.rotation.x = Math.PI / 2;   // Rotate 90 degrees on the X-axis
                 modelRef.current.rotation.y = Math.PI;       // Flip 180 degrees on the Y-axis
+                modelRef.current.metalness = 0;    // High metalness for reflective effect
 
                 // Center the model
                 const box = new THREE.Box3().setFromObject(modelRef.current);
