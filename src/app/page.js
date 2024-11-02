@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <main>
-      <Script async data-uid="cb96ddd2c6" src="https://fresh-3.ck.page/cb96ddd2c6/index.js" />
+      <Script async data-uid="0e262a8b88" src="https://fresh-3.ck.page/0e262a8b88/index.js" />
       <div>
         <div className="headlineDiv">
           <h1 className="rubik vibeHeadline">VIBE</h1>
@@ -39,7 +39,7 @@ export default function Home() {
           <ThreeDModel />
         </div>
         <div className="buttonDiv">
-          <button className="neon-button" data-formkit-toggle="cb96ddd2c6" src="https://fresh-3.ck.page/cb96ddd2c6/index.js">Join Waitlist →</button>
+          <button className="neon-button" data-formkit-toggle="0e262a8b88" src="https://fresh-3.ck.page/cb96ddd2c6/index.js">Join Waitlist →</button>
           <p className="buttonSubheadline">*Available in late 2024 - early 2025</p>
         </div>
       </div>
@@ -77,5 +77,7 @@ export default function Home() {
 
 <li>Get AI suggestions and assistance in real-time</li>
 <li>AI Assistant That Completes Tasks <u>For You</u></li>
+
+      <Script async data-uid="cb96ddd2c6" src="https://fresh-3.ck.page/cb96ddd2c6/index.js" />
             
 */
