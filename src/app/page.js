@@ -10,6 +10,13 @@ import dynamic from 'next/dynamic';
 // import render from "./render.html";
 import ThreeDModel from '../app/ThreeDModel';
 import ObjViewer from "./ObjViewer";
+import { Rubik_80s_Fade } from 'next/font/google'
+
+const rubik80s = Rubik_80s_Fade({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export default function Home() {
 
@@ -25,8 +32,7 @@ export default function Home() {
       <Script async data-uid="cb96ddd2c6" src="https://fresh-3.ck.page/cb96ddd2c6/index.js" />
       <div>
         <div className="headlineDiv">
-          <div className="blackBox"></div>
-          <h1 className="vibeHeadline">VIBE</h1>
+          <h1 className="rubik vibeHeadline">VIBE</h1>
           <h2>AI Necklace With a Camera That <br></br>Tracks Your <span className="colorfulText">Nutrition & Habits</span></h2>
         </div>
         <div className="mainDiv">
@@ -46,6 +52,8 @@ export default function Home() {
 }
 
 /*  
+
+          <div className="blackBox"></div>
 
 <Image className="gif" src={gif} alt="Picture of the prototype" />
 

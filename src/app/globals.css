@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @import url('https://fonts.googleapis.com/css2?family=Nabla&family=Questrial&family=Rubik+80s+Fade&display=swap'); */
+
+.rubik-80s-fade-regular {
+  font-family: "Rubik 80s Fade", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rubik {
+  font-family: var(--font-rubik-80s-fade);
+}
+
 h1 {
   text-align: center;
   color: black;
@@ -13,7 +25,7 @@ h1 {
 }
 
 .logo {
-  margin: 80px auto 0px auto;
+  margin: 40px auto 0px auto;
   text-align: center;
   display: inline-block;
   vertical-align: top;
@@ -33,25 +45,51 @@ h1 {
 
 .vibeHeadline {
   text-align: center;
-  margin: 15px 20px 0px 20px;
+  margin: 0px 20px 0px 20px;
   color: black;
   vertical-align: center;
   font-weight: 900;
   font-size: 5rem;
   display: inline-block;
   vertical-align: top;
+
+  /* font-family: "Rubik 80s Fade", system-ui; */
+
+  background: linear-gradient(
+            /* ${mousePosition.x}*/ 90deg,
+            #636363 0%,
+            #a2a2a2 20%,
+            #ffffff 40%,
+            #a2a2a2 60%,
+            #636363 80%
+          );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.2));
+  transition: all 0.1s ease;
+  padding: 20px;
+  position: relative;
 }
 
 h2 {
   text-align: center;
-  margin: 0 auto 20px auto;
+  margin: -40px auto 20px auto;
   color: black /*gray*/;
   font-weight: 700;
   font-size: 3rem;
 }
 
 .colorfulText {
-  background: linear-gradient(45deg, #ff7e00, #ffbc00); /* Adjust colors to match your button */
+  background: linear-gradient(
+    /* ${mousePosition.x}*/ 90deg,
+    #636363 0%,
+    #a2a2a2 20%,
+    #cfcfcf 40%,
+    #a2a2a2 60%,
+    #636363 80%
+  ); /* linear-gradient(45deg, #ff7e00, #ffbc00); Adjust colors to match your button */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -121,7 +159,14 @@ li::before {
   padding: 15px 30px;
   font-size: 3rem;
   color: black;
-  background: linear-gradient(45deg, #ff7e00, #ffbc00);
+  background: linear-gradient(
+    /* ${mousePosition.x}*/ 90deg,
+    #636363 0%,
+    #a2a2a2 20%,
+    #ffffff 40%,
+    #a2a2a2 60%,
+    #636363 80%
+  )/* linear-gradient(45deg, #ff7e00, #ffbc00) */;
   border: none;
   border-radius: 5px;
   border: 5px solid black;

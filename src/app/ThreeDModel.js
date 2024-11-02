@@ -2,6 +2,9 @@ import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader';
+import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+import { UltraHDRLoader } from 'three/addons/loaders/UltraHDRLoader.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 export default function NecklaceViewer() {
     const containerRef = useRef(null);
@@ -57,6 +60,8 @@ export default function NecklaceViewer() {
                     sceneRef.current.remove(modelRef.current);
                 }
 
+                // modelRef.current.childrem.material.metalness = 0;
+
                 // modelRef.current.children.forEach((child) => {
                         // Apply environment map and reflective properties only for compatible material types
                         // child.material.metalness = 1;    // High metalness for reflective effect
@@ -65,8 +70,21 @@ export default function NecklaceViewer() {
                 // });
                 
                 modelRef.current = gltf.scene;
-
-                console.log(modelRef.current);
+                modelRef.current.traverse((child) => {
+                    if (child.isMesh) {
+                        // Create brighter steel material
+                        const steelMaterial = new THREE.MeshStandardMaterial({
+                            color: 0xdddddd,     // Much lighter gray
+                            metalness: 0.9,      // Slightly reduced metalness for better light interaction
+                            roughness: 0.1,      // Even smoother for more shine
+                            flatShading: false,  // Smooth shading
+                        });
+                
+                        child.material = steelMaterial;
+                        child.castShadow = false;
+                        child.receiveShadow = false;
+                    }
+                });
 
                 // Adjust orientation and position only once, when loading the model
                 modelRef.current.rotation.x = Math.PI / 2;   // Rotate 90 degrees on the X-axis
