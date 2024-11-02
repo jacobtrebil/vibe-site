@@ -78,17 +78,21 @@ export default function NecklaceViewer() {
                             metalness: 0.9,      // Slightly reduced metalness for better light interaction
                             roughness: 0.1,      // Even smoother for more shine
                             flatShading: false,  // Smooth shading
+                            clearcoat: 0.3,        // Subtle clearcoat for shine
+                            clearcoatRoughness: 0.2,
+                            reflectivity: 1.0,   // Full reflectivity
                         });
                 
                         child.material = steelMaterial;
-                        child.castShadow = false;
-                        child.receiveShadow = false;
+                        // child.castShadow = false;
+                        // child.receiveShadow = false;
                     }
                 });
 
                 // Adjust orientation and position only once, when loading the model
                 modelRef.current.rotation.x = Math.PI / 2;   // Rotate 90 degrees on the X-axis
                 modelRef.current.rotation.y = Math.PI;       // Flip 180 degrees on the Y-axis
+                modelRef.current.rotation.z = Math.PI;       // Flip 180 degrees on the Z-axis
                 modelRef.current.metalness = 0;    // High metalness for reflective effect
 
                 // Center the model
@@ -120,7 +124,7 @@ export default function NecklaceViewer() {
             frameIdRef.current = requestAnimationFrame(animate);
             
             if (modelRef.current) {
-                modelRef.current.rotation.z += 0.002; // Rotate model around Z-axis
+                modelRef.current.rotation.z += 0.005; // Rotate model around Z-axis
             }
 
             rendererRef.current.render(sceneRef.current, camera);
