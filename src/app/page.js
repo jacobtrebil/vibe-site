@@ -25,6 +25,12 @@ const dmsans = DM_Sans({
   display: 'swap',
 })
 
+const dmsanssmall = DM_Sans({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
+
 const spacemono = Space_Mono({
   weight: '400',
   subsets: ['latin'],
@@ -88,26 +94,28 @@ export default function Home() {
           <div className="buttonDiv">
             <h2 className={`${dmsans.className}`}>AI Necklace With a Camera That <br></br>Tracks Your <span className="colorfulText">Nutrition & Habits</span></h2>
             <ul>
-              <li>Tracks your nutrition & habits <u>passively</u></li>
-              <li>Understands your life context & habits</li>
-              <li>Provides <u>personalized</u> insights and suggestions</li>
+              <li>Tracks your nutrition & habits <u><b>passively</b></u></li>
+              <li>Understands your life context</li>
+              <li>Provides <u><b>personalized</b></u> insights and suggestions</li>
             </ul><br></br>
             <button className={`${dmsans.className} neon-button`} data-formkit-toggle="0e262a8b88" src="https://fresh-3.ck.page/cb96ddd2c6/index.js">
             Join Waitlist →
             </button>
-            <p className="buttonSubheadline">*Available in late 2024 - early 2025</p>
+            <p className={`${dmsans.className} buttonSubheadline`}>Join 350+ Others. Limited Spots Remaining.<br></br> Launching Late 2024 - Early 2025.</p>
           </div>
         </div>
       </div>
       <footer>
         <div className="footerBox"></div>
-        <h1 className="footerText">© Vibe | &quot;It&apos;s a Vibe&quot;</h1>
+        <h1 className={`${dmsans.className} footerText`}>© Vibe | &quot;It&apos;s a Vibe&quot;</h1>
       </footer>
     </main>
   );
 }
 
 /* 
+
+            <p className={`${dmsanssmall.className} buttonSmallP`}>Join 350+ Others Getting Early Access <br></br>To Vibe. Limited Spots Remaining.</p>
 
             <p className="buttonSmallP">Early Access</p>
 
