@@ -55,14 +55,15 @@ h1 {
 
   /* font-family: "Rubik 80s Fade", system-ui; */
 
+  /* background: black; */
   background: linear-gradient(
-            /* ${mousePosition.x}*/ 90deg,
+            /*${mousePosition.x}*/ 90deg,
             #636363 0%,
             #a2a2a2 20%,
             #ffffff 40%,
             #a2a2a2 60%,
             #636363 80%
-          );
+          ); 
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -74,7 +75,7 @@ h1 {
 }
 
 h2 {
-  text-align: center;
+  text-align: left;
   margin: -40px auto 20px auto;
   color: black /*gray*/;
   font-weight: 700;
@@ -82,14 +83,15 @@ h2 {
 }
 
 .colorfulText {
-  background: linear-gradient(
-    /* ${mousePosition.x}*/ 90deg,
-    #636363 0%,
-    #a2a2a2 20%,
-    #cfcfcf 40%,
-    #a2a2a2 60%,
-    #636363 80%
-  ); /* linear-gradient(45deg, #ff7e00, #ffbc00); Adjust colors to match your button */
+  background: #2f73ea;
+  /* background: linear-gradient(
+    ${mousePosition.x} 90deg,
+    #2f73ea 0%,
+    #99c0fa 20%,
+    #c0e3f9 40%,
+    #99c0fa 60%,
+    #2f73ea 80%
+  );*/ /* linear-gradient(45deg, #ff7e00, #ffbc00); Adjust colors to match your button */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -112,16 +114,23 @@ h2 {
   vertical-align: top;
 }
 
+.vibeRender {
+  width: 25%;
+  margin: -40px auto 0 auto;
+  display: inline-block;
+  vertical-align: top;
+}
+
 ul {
   display: inline-block;
-  width: 30%;
-  margin: 4% 0 0 0; 
+  width: 100%;
+  margin: 0 0 0 0; 
 }
 
 li {
   color: black;
-  font-weight: 500;
-  font-size: 1.75rem;
+  font-weight: 400;
+  font-size: 1.5rem;
   line-height: 3rem;
   text-align: left;
 }
@@ -133,7 +142,9 @@ li::before {
 }
 
 .buttonDiv {
-  text-align: center;
+  text-align: left;
+  display: inline-block;
+  margin: 40px 0 0 0;
 }
 
 .futuristicButton {
@@ -156,17 +167,26 @@ li::before {
 }
 
 .neon-button {
+  margin: 40px auto 0 auto;
   padding: 15px 30px;
   font-size: 3rem;
   color: black;
   background: linear-gradient(
-    /* ${mousePosition.x}*/ 90deg,
+    /*${mousePosition.x}*/ 90deg,
+    #2f73ea 0%,
+    #99c0fa 20%,
+    #c0e3f9 40%,
+    #99c0fa 60%,
+    #2f73ea 80%
+  );
+  /* background: linear-gradient(
+    ${mousePosition.x} 90deg,
     #636363 0%,
     #a2a2a2 20%,
     #ffffff 40%,
     #a2a2a2 60%,
     #636363 80%
-  )/* linear-gradient(45deg, #ff7e00, #ffbc00) */;
+  ) linear-gradient(45deg, #ff7e00, #ffbc00); */
   border: none;
   border-radius: 5px;
   border: 5px solid black;
@@ -174,10 +194,14 @@ li::before {
   transition: all 0.3s ease;
 }
 .neon-button:hover {
-  box-shadow: 0 0 30px rgba(255, 126, 0, 1), 
+  box-shadow: 0 0 30px #2f73ea, 
+              0 0 40px #2f73ea;
+              box-shadow: 0 0 20px #2f73ea, 
+              0 0 30px #2f73ea;
+  /* box-shadow: 0 0 30px rgba(255, 126, 0, 1), 
               0 0 40px rgba(255, 188, 0, 0.8);
               box-shadow: 0 0 20px rgba(255, 126, 0, 0.8), 
-              0 0 30px rgba(255, 188, 0, 0.6);
+              0 0 30px rgba(255, 188, 0, 0.6); */
 }
 
 .joinWaitlist {
@@ -199,8 +223,15 @@ li::before {
   cursor: pointer;
 }
 
+.buttonSmallP {
+  font-weight: 500;
+  color: blue;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
 .buttonSubheadline {
-  text-align: center;
+  text-align: left;
   margin: 20px auto 20px auto;
   color: black;
   font-weight: 500;

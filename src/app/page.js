@@ -10,9 +10,58 @@ import dynamic from 'next/dynamic';
 // import render from "./render.html";
 import ThreeDModel from '../app/ThreeDModel';
 import ObjViewer from "./ObjViewer";
-import { Rubik_80s_Fade } from 'next/font/google'
+import vibeRender from "../../public/vibeRender.png";
+import { Rubik_80s_Fade, Rubik_Glitch, Cherry_Bomb_One, Poppins, Orbitron, DM_Sans, Space_Mono, Spectral } from 'next/font/google'
 
 const rubik80s = Rubik_80s_Fade({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
+
+const dmsans = DM_Sans({
+  weight: '700',
+  subsets: ['latin'],
+  display: 'swap',
+})
+
+const spacemono = Space_Mono({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
+
+const spectral = Spectral({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
+
+const orbitron = Orbitron({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
+
+const poppins = Poppins({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
+
+const poppinsBold = Poppins({
+  weight: '700',
+  subsets: ['latin'],
+  display: 'swap',
+});
+
+const rubikGlitch = Rubik_Glitch({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
+
+const cherryBomb = Cherry_Bomb_One({
   weight: '400',
   subsets: ['latin'],
   display: 'swap',
@@ -32,15 +81,22 @@ export default function Home() {
       <Script async data-uid="0e262a8b88" src="https://fresh-3.ck.page/0e262a8b88/index.js" />
       <div>
         <div className="headlineDiv">
-          <h1 className="rubik vibeHeadline">VIBE</h1>
-          <h2>AI Necklace With a Camera That <br></br>Tracks Your <span className="colorfulText">Nutrition & Habits</span></h2>
+          <h1 className={`${dmsans.className} vibeHeadline` }/*"rubik vibeHeadline"*/>Vibe</h1>
         </div>
         <div className="mainDiv">
-          <ThreeDModel />
-        </div>
-        <div className="buttonDiv">
-          <button className="neon-button" data-formkit-toggle="0e262a8b88" src="https://fresh-3.ck.page/cb96ddd2c6/index.js">Join Waitlist →</button>
-          <p className="buttonSubheadline">*Available in late 2024 - early 2025</p>
+          <Image className="vibeRender" src={vibeRender} alt="Picture of the prototype" />
+          <div className="buttonDiv">
+            <h2 className={`${dmsans.className}`}>AI Necklace With a Camera That <br></br>Tracks Your <span className="colorfulText">Nutrition & Habits</span></h2>
+            <ul>
+              <li>Tracks your nutrition & habits <u>passively</u></li>
+              <li>Understands your life context & habits</li>
+              <li>Provides <u>personalized</u> insights and suggestions</li>
+            </ul><br></br>
+            <button className={`${dmsans.className} neon-button`} data-formkit-toggle="0e262a8b88" src="https://fresh-3.ck.page/cb96ddd2c6/index.js">
+            Join Waitlist →
+            </button>
+            <p className="buttonSubheadline">*Available in late 2024 - early 2025</p>
+          </div>
         </div>
       </div>
       <footer>
@@ -51,7 +107,13 @@ export default function Home() {
   );
 }
 
-/*  
+/* 
+
+            <p className="buttonSmallP">Early Access</p>
+
+          <h2 className={`${dmsans.className}`}>AI Necklace With a Camera That <br></br>Tracks Your <span className="colorfulText">Nutrition & Habits</span></h2>
+
+          <ThreeDModel />
 
           <div className="blackBox"></div>
 

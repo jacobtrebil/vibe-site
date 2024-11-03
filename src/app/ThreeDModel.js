@@ -124,7 +124,7 @@ export default function NecklaceViewer() {
             frameIdRef.current = requestAnimationFrame(animate);
             
             if (modelRef.current) {
-                modelRef.current.rotation.z += 0.005; // Rotate model around Z-axis
+                modelRef.current.rotation.z -= 0.005; // Rotate model around Z-axis
             }
 
             rendererRef.current.render(sceneRef.current, camera);
