@@ -92,7 +92,7 @@ export default function Home() {
         <div className="mainDiv">
           <Image className="vibeRender" src={vibeRender} alt="Picture of the prototype" />
           <div className="buttonDiv">
-            <h2 className={`${dmsans.className}`}>AI Necklace With a Camera That <br></br>Tracks Your <span className="colorfulText">Nutrition & Habits</span></h2>
+            <h2 className={`${dmsans.className}`}>AI Necklace With a Camera That Tracks Your <span className="colorfulText">Nutrition & Habits</span></h2>
             <ul>
               <li>Tracks your nutrition & habits <u><b>passively</b></u></li>
               <li>Understands your life context</li>

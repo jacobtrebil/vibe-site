@@ -105,11 +105,6 @@ h2 {
   background-clip: text;
 }
 
-.mainDiv {
-  margin: 0 auto;
-  text-align: center;
-}
-
 .gif {
   margin: 0 auto 40px auto;
   width: 25%;
@@ -122,11 +117,23 @@ h2 {
   vertical-align: top;
 }
 
+.mainDiv {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .vibeRender {
   width: 25%;
-  margin: -40px auto 0 auto;
+  margin: -40px 0 0 15%;
   display: inline-block;
   vertical-align: top;
+}
+
+.buttonDiv {
+  text-align: left;
+  display: inline-block;
+  margin: 3.75% 0 0 0;
+  width: 50%;
 }
 
 ul {
@@ -147,12 +154,6 @@ li::before {
   content: "·";
   padding: 0 10px 0 0;
   font-weight: 700;
-}
-
-.buttonDiv {
-  text-align: left;
-  display: inline-block;
-  margin: 40px 0 0 0;
 }
 
 .futuristicButton {
