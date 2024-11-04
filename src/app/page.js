@@ -90,9 +90,10 @@ export default function Home() {
           <h1 className={`${dmsans.className} vibeHeadline` }/*"rubik vibeHeadline"*/>Vibe</h1>
         </div>
         <div className="mainDiv">
+        <h2 className={`${dmsans.className} mobileHeadline`}>AI Necklace With a Camera That Tracks Your <span className="colorfulText">Nutrition & Habits</span></h2>
           <Image className="vibeRender" src={vibeRender} alt="Picture of the prototype" />
           <div className="buttonDiv">
-            <h2 className={`${dmsans.className}`}>AI Necklace With a Camera That Tracks Your <span className="colorfulText">Nutrition & Habits</span></h2>
+            <h2 className={`${dmsans.className} headline`}>AI Necklace With a Camera That Tracks Your <span className="colorfulText">Nutrition & Habits</span></h2>
             <ul>
               <li>Tracks your nutrition & habits <u><b>passively</b></u></li>
               <li>Understands your life context</li>
