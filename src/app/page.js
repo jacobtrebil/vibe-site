@@ -93,11 +93,11 @@ export default function Home() {
         <h2 className={`${dmsans.className} mobileHeadline`}>AI Necklace With a Camera That <span className="colorfulText">Captures Your Life</span></h2>
           <Image className="vibeRender" src={vibeRender} alt="Picture of the prototype" />
           <div className="buttonDiv">
-            <h2 className={`${dmsans.className} headline`}>AI Necklace With a Camera That Tracks Your <span className="colorfulText">Nutrition & Habits</span></h2>
+            <h2 className={`${dmsans.className} headline`}>AI Necklace With a Camera That <span className="colorfulText">Captures Your Life</span></h2>
             <ul>
-              <li>Tracks your nutrition & habits <u><b>passively</b></u></li>
-              <li>Understands your life context</li>
-              <li>Provides <u><b>personalized</b></u> insights and suggestions</li>
+              <li>Photo gallery & daily recaps</li>
+              <li>Answers <u><b>personal</b></u> questions</li>
+              <li>Gives you <u><b>perfect</b></u> memory</li>
             </ul><br></br>
             <button className={`${dmsans.className} neon-button`} data-formkit-toggle="0e262a8b88" src="https://fresh-3.ck.page/cb96ddd2c6/index.js">
             Join Waitlist →
