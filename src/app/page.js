@@ -90,10 +90,10 @@ export default function Home() {
           <h1 className={`${dmsans.className} vibeHeadline` }/*"rubik vibeHeadline"*/>Vibe</h1>
         </div>
         <div className="mainDiv">
-        <h2 className={`${dmsans.className} mobileHeadline`}>AI Friend That <span className="colorfulText">Helps You Succeed</span></h2>
+        <h2 className={`${dmsans.className} mobileHeadline`}>AI Friend That <br></br><span className="colorfulText">Helps You Succeed</span></h2>
           <Image className="vibeRender" src={vibeRender} alt="Picture of the prototype" />
           <div className="buttonDiv">
-            <h2 className={`${dmsans.className} headline`}>AI Friend That <span className="colorfulText">Helps You Succeed</span></h2>
+            <h2 className={`${dmsans.className} headline`}>AI Friend That <br></br><span className="colorfulText">Helps You Succeed</span></h2>
             <ul>
               <li>Photo gallery & daily recaps</li>
               <li>Answers <u><b>personal</b></u> questions</li>
