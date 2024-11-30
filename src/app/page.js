@@ -95,9 +95,9 @@ export default function Home() {
           <div className="buttonDiv">
             <h2 className={`${dmsans.className} headline`}>AI Assistant That <br></br><span className="colorfulText">Helps You Succeed</span></h2>
             <ul>
-              <li>Photo gallery & daily recaps</li>
-              <li><u><b>Habit tracker</b></u> & productivity assistant</li>
-              <li>Answers <u><b>personal</b></u> questions</li>
+              <li>Takes a photo every 5 minutes</li>
+              <li><u><b>Tracks your habits</b></u> & helps you stay productive</li>
+              <li>Ask Vibe <u><b>anything</b></u></li>
             </ul><br></br>
             <button className={`${dmsans.className} neon-button`} data-formkit-toggle="0e262a8b88" src="https://fresh-3.ck.page/cb96ddd2c6/index.js">
             Join Waitlist →
