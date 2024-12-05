@@ -90,15 +90,10 @@ export default function Home() {
           <h1 className={`${dmsans.className} vibeHeadline` }/*"rubik vibeHeadline"*/>Vibe</h1>
         </div>
         <div className="mainDiv">
-        <h2 className={`${dmsans.className} mobileHeadline`}>AI Assistant That <br></br><span className="colorfulText">Helps You Succeed</span></h2>
+        <h2 className={`${dmsans.className} mobileHeadline`}><span className="colorfulText">Wearable AI <br></br>Assistant</span></h2>
           <Image className="vibeRender" src={vibeRender} alt="Picture of the prototype" />
           <div className="buttonDiv">
-            <h2 className={`${dmsans.className} headline`}>AI Assistant That <br></br><span className="colorfulText">Helps You Succeed</span></h2>
-            <ul>
-              <li>Takes a photo every 5 minutes</li>
-              <li><u><b>Tracks your habits</b></u> & helps you stay productive</li>
-              <li>Ask Vibe <u><b>anything</b></u></li>
-            </ul><br></br>
+            <h2 className={`${dmsans.className} headline`}><span className="colorfulText">Wearable AI <br></br>Assistant</span></h2>
             <button className={`${dmsans.className} neon-button`} data-formkit-toggle="0e262a8b88" src="https://fresh-3.ck.page/cb96ddd2c6/index.js">
             Join Waitlist →
             </button>
@@ -115,6 +110,12 @@ export default function Home() {
 }
 
 /* 
+
+            <ul>
+              <li>Takes a photo every 5 minutes</li>
+              <li><u><b>Tracks your habits</b></u> & helps you stay productive</li>
+              <li>Ask Vibe <u><b>anything</b></u></li>
+            </ul><br></br>
 
             <p className={`${dmsanssmall.className} buttonSmallP`}>Join 350+ Others Getting Early Access <br></br>To Vibe. Limited Spots Remaining.</p>
 

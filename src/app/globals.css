@@ -87,15 +87,15 @@ h2 {
 }
 
 .colorfulText {
-  /* background: linear-gradient(
-    ${mousePosition.x} 90deg,
+  background: linear-gradient(
+    /* ${mousePosition.x} */ 90deg,
     #636363 0%,
     #a2a2a2 20%,
     #d5d5d5 40%,
     #a2a2a2 60%,
     #636363 80%
-  ); */
-  background: #2f73ea; 
+  ); 
+  /* background: #2f73ea; */
   /* background: linear-gradient(
     ${mousePosition.x} 90deg,
     #2f73ea 0%,
@@ -184,7 +184,7 @@ li::before {
   padding: 15px 30px;
   font-size: 3rem;
   color: white;
-  background: #2f73ea;
+  background: black/* #2f73ea */;
   /* background: linear-gradient(
     ${mousePosition.x} 90deg,
     #2f73ea 0%,
@@ -203,15 +203,15 @@ li::before {
   ) linear-gradient(45deg, #ff7e00, #ffbc00); */
   /* border: none; */
   border-radius: 5px;
-  border: 5px solid #2f73ea;
+  /* border: 5px solid #2f73ea; */
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .neon-button:hover {
-  box-shadow: 0 0 30px #2f73ea, 
-              0 0 40px #2f73ea;
-              box-shadow: 0 0 20px #2f73ea, 
-              0 0 30px #2f73ea;
+  box-shadow: 0 0 30px black /* #2f73ea*/, 
+              0 0 40px black /* #2f73ea */;
+              box-shadow: 0 0 20px black /* #2f73ea */, 
+              0 0 30px black /* #2f73ea */;
   /* box-shadow: 0 0 30px rgba(255, 126, 0, 1), 
               0 0 40px rgba(255, 188, 0, 0.8);
               box-shadow: 0 0 20px rgba(255, 126, 0, 0.8), 
