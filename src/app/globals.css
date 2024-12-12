@@ -53,7 +53,7 @@ h1 {
   color: black;
   vertical-align: center;
   font-weight: 900;
-  font-size: 5rem;
+  font-size: 3rem;
   display: inline-block;
   vertical-align: top;
 
@@ -71,8 +71,8 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-  filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.2));
+  /* text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.2)); */
   transition: all 0.1s ease;
   padding: 20px;
   position: relative;

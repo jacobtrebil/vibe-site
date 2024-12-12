@@ -87,7 +87,7 @@ export default function Home() {
       <Script async data-uid="0e262a8b88" src="https://fresh-3.ck.page/0e262a8b88/index.js" />
       <div>
         <div className="headlineDiv">
-          <h1 className={`${dmsans.className} vibeHeadline` }/*"rubik vibeHeadline"*/>Vibe</h1>
+          <h1 className={`${spacemono.className} vibeHeadline` }/*"rubik vibeHeadline"*/>Vibe</h1>
         </div>
         <div className="mainDiv">
         <h2 className={`${dmsans.className} mobileHeadline`}><span className="colorfulText">Wearable AI <br></br>Assistant</span></h2>
@@ -99,7 +99,7 @@ export default function Home() {
               <li>Tracks your <u><b>activities, goals, and distractions</b></u></li>
               <li>Provides AI suggestions on how to improve</li>
             </ul><br></br>
-            <button className={`${dmsans.className} neon-button`} data-formkit-toggle="0e262a8b88" src="https://fresh-3.ck.page/cb96ddd2c6/index.js">
+            <button className={`${spacemono.className} neon-button`} data-formkit-toggle="0e262a8b88" src="https://fresh-3.ck.page/cb96ddd2c6/index.js">
             Join Waitlist →
             </button>
             <p className={`${dmsans.className} buttonSubheadline`}>Join 350+ Others. Limited Spots Remaining.<br></br> Launching Early - Mid 2025.</p>
