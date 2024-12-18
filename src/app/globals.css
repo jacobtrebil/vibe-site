@@ -23,9 +23,24 @@ h1 {
   display: none;
 }
 
+.headline {
+  text-align: center; 
+  line-height: 3rem;
+  text-decoration: italic;
+}
+
+.subheadlineMain {
+  text-align: center;
+  margin: 20px auto 0px auto;
+  color: lightgray;
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
 .headlineDiv {
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
+  background-color: rgb(24, 24, 27);
 }
 
 .logo {
@@ -50,24 +65,24 @@ h1 {
 .vibeHeadline {
   text-align: center;
   margin: 0px 20px 0px 20px;
-  color: black;
+  color: white;
   vertical-align: center;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 4rem;
   display: inline-block;
   vertical-align: top;
 
   /* font-family: "Rubik 80s Fade", system-ui; */
 
-  background: black; 
-  /* background: linear-gradient(
-            ${mousePosition.x} 90deg,
+  /* background: white; */
+  background: linear-gradient(
+            /*${mousePosition.x}*/ 90deg,
             #636363 0%,
             #a2a2a2 20%,
             #ffffff 40%,
             #a2a2a2 60%,
             #636363 80%
-          ); */
+          );
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -87,14 +102,18 @@ h2 {
 }
 
 .colorfulText {
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 1rem;
+  background: white;
   background: linear-gradient(
-    /* ${mousePosition.x} */ 90deg,
+    /*${mousePosition.x}*/ 90deg,
     #636363 0%,
     #a2a2a2 20%,
     #d5d5d5 40%,
     #a2a2a2 60%,
     #636363 80%
-  ); 
+  );
   /* background: #2f73ea; */
   /* background: linear-gradient(
     ${mousePosition.x} 90deg,
@@ -121,20 +140,26 @@ h2 {
   vertical-align: top;
 }
 
+body {
+  background-color: rgb(24, 24, 27);
+}
+
 .mainDiv {
   margin: 0 auto;
   text-align: center;
+  background-color: rgb(24, 24, 27);
 }
 
 .vibeRender {
-  width: 25%;
-  margin: -40px 0 0 15%;
-  display: inline-block;
+  width: 50%;
+  margin: -80px auto 0 auto;
+  /* display: inline-block; */
   vertical-align: top;
+  text-align: center;
 }
 
 .buttonDiv {
-  text-align: left;
+  text-align: center;
   display: inline-block;
   margin: 3.75% 0 0 0;
   width: 50%;
@@ -180,11 +205,11 @@ li::before {
 }
 
 .neon-button {
-  margin: 40px auto 0 auto;
+  margin: 20px auto 0 auto;
   padding: 15px 30px;
   font-size: 3rem;
-  color: white;
-  background: black/* #2f73ea */;
+  color: black;
+  background: white/* #2f73ea */;
   /* background: linear-gradient(
     ${mousePosition.x} 90deg,
     #2f73ea 0%,
@@ -208,10 +233,10 @@ li::before {
   transition: all 0.3s ease;
 }
 .neon-button:hover {
-  box-shadow: 0 0 30px black /* #2f73ea*/, 
-              0 0 40px black /* #2f73ea */;
-              box-shadow: 0 0 20px black /* #2f73ea */, 
-              0 0 30px black /* #2f73ea */;
+  box-shadow: 0 0 30px white /* #2f73ea*/, 
+              0 0 40px white /* #2f73ea */;
+              box-shadow: 0 0 20px white /* #2f73ea */, 
+              0 0 30px white /* #2f73ea */;
   /* box-shadow: 0 0 30px rgba(255, 126, 0, 1), 
               0 0 40px rgba(255, 188, 0, 0.8);
               box-shadow: 0 0 20px rgba(255, 126, 0, 0.8), 
@@ -245,10 +270,10 @@ li::before {
 }
 
 .buttonSubheadline {
-  text-align: left;
+  text-align: center;
   margin: 20px auto 20px auto;
-  color: black;
-  font-weight: 500;
+  color: lightgray;
+  font-weight: 300;
   font-size: 1.25rem;
 }
 

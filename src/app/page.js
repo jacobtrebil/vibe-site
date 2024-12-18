@@ -10,6 +10,7 @@ import dynamic from 'next/dynamic';
 // import render from "./render.html";
 import ThreeDModel from '../app/ThreeDModel';
 import ObjViewer from "./ObjViewer";
+import necklace from "../../public/necklace.png";
 import vibeRender from "../../public/vibeRender.png";
 import { Rubik_80s_Fade, Rubik_Glitch, Cherry_Bomb_One, Poppins, Orbitron, DM_Sans, Space_Mono, Spectral } from 'next/font/google'
 
@@ -83,38 +84,42 @@ export default function Home() {
   }); */
 
   return (
-    <main>
+    <main className="main">
       <Script async data-uid="0e262a8b88" src="https://fresh-3.ck.page/0e262a8b88/index.js" />
       <div>
         <div className="headlineDiv">
           <h1 className={`${spacemono.className} vibeHeadline` }/*"rubik vibeHeadline"*/>Vibe</h1>
         </div>
+        <Image className="vibeRender" src={necklace} alt="Picture of the prototype" />
         <div className="mainDiv">
-        <h2 className={`${dmsans.className} mobileHeadline`}><span className="colorfulText">Wearable AI <br></br>Assistant</span></h2>
-          <Image className="vibeRender" src={vibeRender} alt="Picture of the prototype" />
+        <h2 className={`${dmsans.className} mobileHeadline`}><span className="colorfulText">A Necklace That Sees and Hears Everything You Do</span></h2>
           <div className="buttonDiv">
-            <h2 className={`${dmsans.className} headline`}><span className="colorfulText">Wearable AI <br></br>Assistant</span></h2>
-            <ul>
-              <li>Sees everything you do</li>
-              <li>Tracks your <u><b>activities, goals, and distractions</b></u></li>
-              <li>Provides AI suggestions on how to improve</li>
-            </ul><br></br>
+            <h2 className={`${spacemono.className} headline`}><span className="colorfulText">A Necklace That Sees and Hears Everything You Do</span></h2>
             <button className={`${spacemono.className} neon-button`} data-formkit-toggle="0e262a8b88" src="https://fresh-3.ck.page/cb96ddd2c6/index.js">
             Join Waitlist →
             </button>
-            <p className={`${dmsans.className} buttonSubheadline`}>Join 350+ Others. Limited Spots Remaining.<br></br> Launching Early - Mid 2025.</p>
+            <p className={`${spacemono.className} buttonSubheadline`}>Join 350+ Others. Launching in 2025.</p>
           </div>
         </div>
       </div>
-      <footer>
-        <div className="footerBox"></div>
-        <h1 className={`${dmsans.className} footerText`}>© Vibe</h1>
-      </footer>
     </main>
   );
 }
 
 /* 
+
+<p className={`${dmsans.className} subheadlineMain`}>Track your time, productivity, and distractions, get AI suggestions on how to improve, and passively capture your life.</p>
+
+            <ul>
+              <li>Sees everything you do</li>
+              <li>Tracks your <u><b>activities, goals, and distractions</b></u></li>
+              <li>Provides AI suggestions on how to improve</li>
+            </ul><br></br>
+
+      <footer>
+        <div className="footerBox"></div>
+        <h1 className={`${dmsans.className} footerText`}>© Vibe</h1>
+      </footer>
 
             <ul>
               <li>Takes a photo every 5 minutes</li>
