@@ -305,6 +305,9 @@ footer {
 }
 
 @media only screen and (max-width: 1100px) {
+  .neon-button {
+    font-size: 2rem;
+  }
   .headlineDiv {
     text-align: center;
   }
@@ -313,13 +316,11 @@ footer {
     text-align: center;
   }
   .vibeRender {
-    width: 25%;
-    margin: 0 auto;
-    display: block;
+    width: 75%;
   }
   .buttonDiv {
     text-align: center;
-    margin: 0 auto;
+    margin: 40px auto 0 auto;
     width: 60%;
   }
   .buttonSubheadline {
@@ -332,17 +333,25 @@ footer {
     font-size: 2.5rem;
     width: 75%;
   }
-  .headline {
+  /* .headline {
     display: none;
-  }
+  } */
   .footerBox {
     display: none;
+  }
+  .colorfulText {
+    font-size: 2rem;
   }
 }
 
 @media only screen and (max-width: 700px) {
   .vibeRender {
-    width: 50%;
+    width: 90%;
+  }
+  .buttonDiv {
+    text-align: center;
+    margin: 40px auto 0 auto;
+    width: 90%;
   }
 }
 

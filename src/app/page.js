@@ -92,7 +92,6 @@ export default function Home() {
         </div>
         <Image className="vibeRender" src={necklace} alt="Picture of the prototype" />
         <div className="mainDiv">
-        <h2 className={`${dmsans.className} mobileHeadline`}><span className="colorfulText">A Necklace That Sees and Hears Everything You Do</span></h2>
           <div className="buttonDiv">
             <h2 className={`${spacemono.className} headline`}><span className="colorfulText">A Necklace That Sees and Hears Everything You Do</span></h2>
             <button className={`${spacemono.className} neon-button`} data-formkit-toggle="0e262a8b88" src="https://fresh-3.ck.page/cb96ddd2c6/index.js">
@@ -107,6 +106,8 @@ export default function Home() {
 }
 
 /* 
+
+        <h2 className={`${dmsans.className} mobileHeadline`}><span className="colorfulText">A Necklace That Sees and Hears Everything You Do</span></h2>
 
 <p className={`${dmsans.className} subheadlineMain`}>Track your time, productivity, and distractions, get AI suggestions on how to improve, and passively capture your life.</p>
 
