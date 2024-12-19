@@ -7,7 +7,8 @@ export const metadata = {
   title: "It's a Vibe",
   description: "It's a Vibe",
   icons: {
-    icon: "/vibeIcon.ico",
+    icon: "/favicon.ico",
+
   },
 };
 
