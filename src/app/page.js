@@ -85,7 +85,7 @@ export default function Home() {
 
   return (
     <main className="main">
-      <script async data-uid="d1c544a7d2" src="https://fresh-3.kit.com/d1c544a7d2/index.js"></script>
+      <script async data-uid="c007bbef55" src="https://fresh-3.kit.com/c007bbef55/index.js"></script>
       <div>
         <div className="headlineDiv">
           <h1 className={`${spacemono.className} vibeHeadline` }/*"rubik vibeHeadline"*/>Vibe</h1>
@@ -94,7 +94,7 @@ export default function Home() {
         <div className="mainDiv">
           <div className="buttonDiv">
             <h2 className={`${spacemono.className} headline`}><span className="colorfulText">A Necklace That Sees and Hears Everything You Do</span></h2>
-            <button className={`${spacemono.className} neon-button`} data-formkit-toggle="d1c544a7d2" src="https://fresh-3.kit.com/d1c544a7d2/index.js">
+            <button className={`${spacemono.className} neon-button`} data-formkit-toggle="c007bbef55" src="https://fresh-3.kit.com/c007bbef55/index.js">
             Join Waitlist →
             </button>
             <p className={`${spacemono.className} buttonSubheadline`}>Join 350+ Others. Launching in 2025.</p>
