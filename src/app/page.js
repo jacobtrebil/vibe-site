@@ -97,7 +97,7 @@ export default function Home() {
             <button className={`${spacemono.className} neon-button`} data-formkit-toggle="c007bbef55" src="https://fresh-3.kit.com/c007bbef55/index.js">
             Join Waitlist →
             </button>
-            <p className={`${spacemono.className} buttonSubheadline`}>Join 350+ Others. Launching in 2025.</p>
+            <p className={`${spacemono.className} buttonSubheadline`}>Join 375+ Others. Launching in 2025.</p>
           </div>
         </div>
       </div>
