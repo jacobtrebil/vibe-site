@@ -93,7 +93,7 @@ export default function Home() {
         <Image className="vibeRender" src={necklace} alt="Picture of the prototype" />
         <div className="mainDiv">
           <div className="buttonDiv">
-            <h2 className={`${spacemono.className} headline`}><span className="colorfulText">A Necklace That Sees and Hears Everything You Do</span></h2>
+            <h2 className={`${spacemono.className} headline`}><span className="colorfulText">A Necklace That Tracks Everything You Do</span></h2>
             <button className={`${spacemono.className} neon-button`} data-formkit-toggle="c007bbef55" src="https://fresh-3.kit.com/c007bbef55/index.js">
             Join Waitlist →
             </button>
