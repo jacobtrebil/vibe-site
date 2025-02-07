@@ -32,7 +32,7 @@ const ModelScene = () => {
       >
         <ambientLight intensity={0.5} />
         <directionalLight position={[2, 5, 5]} intensity={1} />
-        <OrbitControls enableZoom={true} enablePan={false} />
+        <OrbitControls enableZoom={false} enablePan={false} />
         <Environment files="/Footprint_Court_2k.hdr" />
         <Model />
       </Canvas>
