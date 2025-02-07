@@ -125,7 +125,7 @@ export default function Home() {
               Join Waitlist →
             </button>
             <p className={`${spacemono.className} buttonSubheadline`}>
-              Join 440+ Others. Launching in 2025.
+              Get early access ahead of millions of early adopters. Launching in 2025.
             </p>
           </div>
         </div>
