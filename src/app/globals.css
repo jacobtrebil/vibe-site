@@ -348,6 +348,7 @@ footer {
   .vibeRender {
     margin: 0px auto 20px auto;    
     width: 90%;
+    height: 50dvh;
   }
   .buttonDiv {
     text-align: center;
