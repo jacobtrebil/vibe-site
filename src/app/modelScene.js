@@ -1,13 +1,20 @@
 "use client";
 
-import React from "react";
-import { Canvas } from "@react-three/fiber";
+import React, { useState } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Environment, useGLTF } from "@react-three/drei";
 
 const Model = () => {
   const { scene } = useGLTF("/neck.glb");
-
-  return <primitive scale={30} object={scene} />;
+  const [timer, setTimer] = useState();
+  useFrame(({ clock }) => {
+    setTimer(clock.elapsedTime);
+  });
+  return (
+    <group rotation={[0, 0, -timer]}>
+      <primitive rotation={[0, -Math.PI / 2, 0]} scale={35} object={scene} />
+    </group>
+  );
 };
 
 const ModelScene = () => {
@@ -20,12 +27,12 @@ const ModelScene = () => {
       }}
     >
       <Canvas
-        camera={{ position: [0, 1, 2] }}
+        camera={{ position: [0, 3, 0] }}
         style={{ width: "80vw", height: "40vh" }}
       >
         <ambientLight intensity={0.5} />
         <directionalLight position={[2, 5, 5]} intensity={1} />
-        <OrbitControls autoRotate enableZoom={false} enablePan={false} />
+        <OrbitControls enableZoom={true} enablePan={false} />
         <Environment files="/Footprint_Court_2k.hdr" />
         <Model />
       </Canvas>
