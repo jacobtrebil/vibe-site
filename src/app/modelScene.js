@@ -8,10 +8,10 @@ const Model = () => {
   const { scene } = useGLTF("/neck.glb");
   const [timer, setTimer] = useState();
   useFrame(({ clock }) => {
-    setTimer(clock.elapsedTime);
+    if (scene) setTimer(clock.elapsedTime);
   });
   return (
-    <group rotation={[0, 0, -timer]}>
+    <group rotation={[0, 0, Math.PI - timer]}>
       <primitive rotation={[0, -Math.PI / 2, 0]} scale={35} object={scene} />
     </group>
   );
