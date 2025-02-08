@@ -39,7 +39,7 @@ h1 {
 
 .headlineDiv {
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
   /*  background-color: rgb(24, 24, 27); */
   background-color: white;
 }
@@ -66,7 +66,7 @@ h1 {
 .vibeHeadline {
   text-align: center;
   margin: 0px 10px 0px 10px;
-  color: white;
+  color: black;
   vertical-align: center;
   font-weight: 900;
   font-size: 1.5rem;
@@ -76,17 +76,17 @@ h1 {
   /* font-family: "Rubik 80s Fade", system-ui; */
 
   /* background: white; */
-  background: linear-gradient(
-            /*${mousePosition.x}*/ 90deg,
+ /* background: linear-gradient(
+            ${mousePosition.x} 90deg,
             #636363 0%,
             #a2a2a2 20%,
             #434343 40%,
             #a2a2a2 60%,
             #636363 80%
-          );
+          ); 
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  color: transparent; */
   /* text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
   filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.2)); */
   transition: all 0.1s ease;
